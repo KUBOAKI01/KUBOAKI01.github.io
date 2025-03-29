@@ -1,39 +1,52 @@
-
-
-
 <html>
-<h1 class:"italic">WETLAND</h1>
+<head>
 <style>
-body 
-  {
+  body {
     background-color: azure;
-    background-image: url('C:\Users\1\Desktop\web\img\A001.webp');
+    background-image: url('img/A001.webp'); /* 使用相对路径 */
+    background-size: cover; /* 背景图片填充整个视口 */
+    height: 100vh; /* 使body的高度为视口高度 */
+    margin: 0; /* 去除默认的body边距 */
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中子元素 */
+    justify-content: flex-start; /* 垂直顶部对齐 */
   }
-h1
-{font-size: 145px;}
+  .header {
+    background-color: rgba(255, 255, 255, 0.8); /* 白色背景，半透明 */
+    width: 100%;
+    height: 100px; /* 矩形的高度 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    border-bottom: 2px solid #000; /* 底部边框 */
+  }
+  .header h1 {
+    font-size: 145px;
+    color: rgb(10, 189, 183);
+    margin: 0; /* 去除默认的h1边距 */
+  }
+  .content {
+    text-align: left; /* 将内容文本对齐方式改为左对齐 */
+    width: 80%; /* 设置内容宽度，可以根据需要调整 */
+    margin-top: 20px; /* 增加内容和标题之间的间距 */
+  }
+  p.xieti {
+    font-style: italic;
+  }
 </style>
-<style>
-h1
-{
-  color:rgb(10, 189, 183);
-  text-align:center
-}
-
-</style>
-
-<p class="xieti">这是WETLAND服务器的官方网站 </p>
-<p class="xieti">很高兴你来到这里</p>
-<p class="xieti">你可以通过下面的链接在QQ找到我</p>
-
-<style>
-p.xieti {font-style: italic;}
-</style>
+</head>
 <body>
-<ul1>
-
-  <li> <a href="https://qm.qq.com/q/ckxbXpsETu">QQ链接</a> </li>
-
-</ul1>
-</style>
+  <div class="header">
+    <h1 class="italic">WETLAND</h1>
+  </div>
+  <div class="content">
+    <p class="xieti">这是WETLAND服务器的官方网站 </p>
+    <p class="xieti">很高兴你来到这里</p>
+    <p class="xieti">你可以通过下面的链接在QQ找到我</p>
+    <ul>
+      <li> <a href="https://qm.qq.com/q/ckxbXpsETu">QQ链接</a> </li>
+    </ul>
+  </div>
 </body>
 </html>
